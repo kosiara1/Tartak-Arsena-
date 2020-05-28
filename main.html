@@ -8,6 +8,25 @@
 </head>
 <body>
      <div class="maindiv"></div>
+      
+     
+     <div id="map"></div>
+     <script>
+
+ function initMap() {
+
+   var Celestyny = {lat: 51.921370, lng: 18.345280};
+   var map = new google.maps.Map(
+       document.getElementById('map'), {zoom: 13, center: Celestyny});
+   var marker = new google.maps.Marker({position: Celestyny, map: map});
+ }
+     </script>
+     <script async defer
+     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-WfCsl1TylLLsWMLN3dqP8fDza867YLE&callback=initMap">
+     </script>
+
+
+
     <footer>
          <div class="footer1">
             <img class="foto1" src="las.jpg" alt="drewno se w lesie leży lol">
