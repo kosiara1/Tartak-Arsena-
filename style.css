@@ -1,0 +1,139 @@
+@import url(reset.css);
+
+#map {
+    height: 400px; 
+    width: 100%;  
+
+   }
+   #map2 {
+    height: 400px; 
+    width: 100%;  
+
+   }
+html {
+    font-family: 'Tahoma', serif;
+}
+
+h1 {
+    font-size: 3.7rem;
+    padding: 3.5rem;
+    margin: 4rem;
+    background-color: rgba(255, 255, 255, .9);
+    border-radius: 20px;
+}
+
+h2,
+h3 {
+    font-size: 2.7rem;
+    background-color: #3B4347;
+    color: #fff;
+    display: inline-block;
+    padding: 2rem;
+    margin: 2rem;
+    border-top-left-radius: 20px;
+}
+
+div {
+    width: 100%;
+}
+
+div.maindiv {
+    height: 200px;
+    background-color: white;
+}
+div.footer1{
+    position: relative;
+    color: white;
+    height: 120px;
+    width: 100%;
+    background-color: black;
+
+}
+div.footer2{
+    height: 40px;
+    background-color: #222021;
+    text-align: center;
+    color: blanchedalmond;
+}
+img.foto1{
+    width: 100%;
+    bottom: 5%;
+    color: white;
+    opacity: 0.3;
+    height: 120px;
+    z-index: 100;
+    object-fit: cover;
+    
+}
+footer{
+    width: 100%;
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    color: azure;
+    background-color: #222021;
+}
+
+.footertext1{
+    position: absolute;
+    top: 40%;
+    left: 51%;
+    color: #C79E52;
+}
+.footertext2{
+    position: absolute;
+    top: 40%;
+    left: 32%;
+    color: #C79E52;
+}
+.footertext3{
+    position: absolute;
+    top: 40%;
+    left: 13%;
+    font-size: 25px;
+    color: #C79E52;
+}
+.footertext4{
+    position: absolute;
+    top:40%;
+    left: 76%;
+    color: #C79E52;
+}
+.ion1{
+    position: absolute;
+    top: 40%;
+    left: 75%;
+    color: #C79E52;
+}
+.ion2{
+    position: absolute;
+    top: 40%;
+    left: 31%;
+    color: #C79E52;
+}
+.ion3{
+    position: absolute;
+    top:40%;
+    left:50%;
+    color: #C79E52;
+}
+.ion4{
+    position: absolute;
+    top: 0;
+    left: -1%;
+    width: 2rem;
+    height: 2rem;
+    color: #C79E52;
+}
+
+.copyrights{
+    position: absolute;
+    text-align: center;
+    bottom: 10%;
+    left: 45%;
+    color: #C79E52;
+    
+}
+.copyrights:hover {
+    box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.1);
+}
