@@ -1,69 +1,211 @@
-@import url(reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url(galeria.css);
 
-#map {
-    height: 400px; 
-    width: 100%;  
-
-   }
-   #map2 {
-    height: 400px; 
-    width: 100%;  
-
-   }
-html {
-    font-family: 'Tahoma', serif;
+body {
+    background: #b3b3b3;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
 }
 
-h1 {
-    font-size: 3.7rem;
-    padding: 3.5rem;
-    margin: 4rem;
-    background-color: rgba(255, 255, 255, .9);
-    border-radius: 20px;
+                                                    /* ŚRODEK */
+
+.wrapper {
+    width: 960px;
+    margin: 10% auto 0;
 }
 
-h2,
-h3 {
-    font-size: 2.7rem;
-    background-color: #3B4347;
+a {
+    text-decoration: none;
+}
+
+.single-portfolio {
+    -webkit-background-size: cover;
+    background-size: cover;
+    position: relative;
+    width: 300px;
+    height: 300px;
+    float: left;
+    margin: 5px;
+    background-position: center;
+    -webkit-transition: 4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+    transition: .4s;
+    overflow: hidden;
+}
+
+.single-portfolio:after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     color: #fff;
-    display: inline-block;
-    padding: 2rem;
-    margin: 2rem;
-    border-top-left-radius: 20px;
+    -webkit-transition: translateY(100%);
+    -moz-transition: translateY(100%);
+    -ms-transition: translateY(100%);
+    -o-transition: translateY(100%);
+    transform: translateY(100%);
+    opacity: 0;
+    text-align: center;
+    padding-top: 35%;
+    font-size: 35px;
+    text-transform: uppercase;
+    content: attr(data-text);
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+    margin-top: 10px;
 }
 
-div {
+.single-portfolio:before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    -webkit-transition: translateY(90%);
+    -moz-transition: translateY(90%);
+    -ms-transition: translateY(90%);
+    -o-transition: translateY(90%);
+    transform: translateY(90%);
+    transition: .5s;
+    background-color: rosybrown;
+    color: #fff;
+    padding: 0 10px;
+    content: attr(data-title);
+    font-size: 24px;
+    text-align: center;
+}
+
+.single-portfolio:hover:after {
+    -webkit-transition: translateY(0);
+    -moz-transition: translateY(0);
+    -ms-transition: translateY(0);
+    -o-transition: translateY(0);
+    transform: translateY(0);
+    -webkit-transition: .5s .2s;
+    -moz-transition: .5s .2s;
+    -ms-transition: .5s .2s;
+    -o-transition: .5s .2s;
+    transition: .5s .2s;
+    opacity: 1;
+}
+
+.single-portfolio:hover:before {
+    -webkit-transition: translateY(0);
+    -moz-transition: translateY(0);
+    -ms-transition: translateY(0);
+    -o-transition: translateY(0);
+    transform: translateY(0);
+    padding: 10px;
+    background-color: rgba(255, 0, 0, 0.6);
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+}
+
+/* MENU GÓRA */
+
+.kontener {
+    width: 60%;
+    height: 150px;
+    margin: 0 auto;
+}
+
+header {
+    background: red;
+}
+
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.logo {
+    position: absolute;
+    top: 50px;
+    left: 30%;
+    height: 5rem;
+    width: 5rem;
+                                                                                    /* tu pozycjonowanie */
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 25px;
+    position: relative;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+nav a:hover {
+    color: black;
+}
+
+nav a::before {
+    content: '';
+    display: block;
+    height: 4px;
+    width: 100%;
+    background-color: #444;
+    position: absolute;
+    bottom: -10px;
+    width: 0%;
+    transition: all ease-in-out 300ms;
+}
+
+nav a:hover::before {
     width: 100%;
 }
 
-div.maindiv {
-    height: 200px;
-    background-color: white;
-}
+                                                                                /* COPYRIGHT */
+
 div.footer1{
     position: relative;
     color: white;
-    height: 120px;
+    height: 170px;
     width: 100%;
     background-color: black;
 
 }
 div.footer2{
-    height: 40px;
-    background-color: #222021;
+    height: 70px;
+    background-color: black;
     text-align: center;
     color: blanchedalmond;
 }
 img.foto1{
     width: 100%;
-    bottom: 5%;
     color: white;
     opacity: 0.3;
-    height: 120px;
+    height: 170px;
     z-index: 100;
-    object-fit: cover;
-    
+    object-fit: none;
+
 }
 footer{
     width: 100%;
@@ -71,69 +213,56 @@ footer{
     left: 0px;
     bottom: 0px;
     color: azure;
-    background-color: #222021;
+    padding: 10px;
+    background-color: black;
 }
 
 .footertext1{
     position: absolute;
-    top: 40%;
-    left: 51%;
-    color: #C79E52;
+    top: 60px;
+    left: 60px;
 }
 .footertext2{
     position: absolute;
-    top: 40%;
-    left: 32%;
-    color: #C79E52;
+    top: 100px;
+    left: 60px;
 }
 .footertext3{
     position: absolute;
-    top: 40%;
-    left: 13%;
-    font-size: 25px;
-    color: #C79E52;
+    top: 16px;
+    left: 80px;
+    font-size: larger;
 }
 .footertext4{
     position: absolute;
-    top:40%;
-    left: 76%;
-    color: #C79E52;
+    top:140px;
+    left: 60px;
 }
 .ion1{
     position: absolute;
-    top: 40%;
-    left: 75%;
-    color: #C79E52;
+    top: 60px;
+    left: 40px;
 }
 .ion2{
     position: absolute;
-    top: 40%;
-    left: 31%;
-    color: #C79E52;
-}
-.ion3{
-    position: absolute;
-    top:40%;
-    left:50%;
-    color: #C79E52;
+    top: 100px;
+    left: 40px;
 }
 .ion4{
     position: absolute;
-    top: 0;
-    left: -1%;
-    width: 2rem;
-    height: 2rem;
-    color: #C79E52;
+    top:140px;
+    left:40px;
+}
+.ion3{
+  position: absolute;
+  top: 12px;
+  height: 2rem;
+  width: 2rem;
+  left: 30px;
 }
 
-.copyrights{
-    position: absolute;
-    text-align: center;
-    bottom: 10%;
-    left: 45%;
-    color: #C79E52;
-    
-}
-.copyrights:hover {
-    box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.1);
+.cp{
+  position: absolute;
+  bottom: 37px;
+  left: 50%;
 }
