@@ -1,0 +1,261 @@
+O nas
+
+<div class="onas">
+        <div class="tekstkontener">
+            <h1>O nas</h1>
+            <p class="text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus velit ducimus, enim inventore earum, eligendi nostrum pariatur necessitatibus eius dicta a voluptates sit deleniti autem error eos totam nisi neque voluptates sit deleniti autem error eos totam nisi neque.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, obcaecati officia at nostrum exercitationem laboriosam illum perspiciatis eligendi saepe dolore voluptates amet itaque? Eius facere nihil necessitatibus accusantium facilis iusto. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, officiis omnis perferendis, rem repellendus placeat incidunt ducimus animi voluptas dolores nisi maiores iusto provident cumque natus dolorem? Omnis, voluptatum quo?
+            </p>
+            <div class="skills">
+                <span>coś tam</span>
+                <span>coś tam</span>
+                <span>coś tam</span>
+            </div>
+        </div>
+    </div>
+    
+    CSS
+    
+    *{
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans",sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f1f1f1;
+}
+
+.onas{
+    background: url(1.jpg) no-repeat left;
+    background-size: 50%;
+    background-color: #fdfdfd;
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+.tekstkontener{
+    width: 55%;
+    float: right;
+    background-color: #fdfdfd;
+    padding: 150px;
+}
+
+.tekstkontener h1{
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.text{
+    font-size: 13px;
+    color: #545454;
+    line-height: 30px;
+    text-align: justify;
+    margin-bottom: 40px;
+}
+
+.skills{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+@media screen and (max-width:1200px){
+    .tekstkontener{
+        padding: 80px;
+    }
+}
+
+@media screen and (max-width:1000px){
+    .about-section{
+        background-size: 100%;
+        padding: 100px 40px;
+    }
+    .tekstkontener{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:600px){
+    .about-section{
+        padding: 0;
+    }
+    .tekstkontener{
+        padding: 60px;
+    }
+}
+
+KONTAKT PRZEROBIONY
+
+  <div class="background">
+    <img class="img" src="1.jpg">
+    <div class="contact-page">
+      <div class="contact-info">
+        <div class="item">
+          <i class="icon fas fa-home"></i>
+          Celestyny 16, 62-709 Malanów
+        </div>
+        <div class="item">
+          <i class="icon fas fa-phone"></i>
+          +48 607 939 814
+        </div>
+        <div class="item">
+          <i class="icon fas fa-envelope"></i>
+          slawomirjak@o2.pl
+        </div>
+        <div class="item">
+          <i class="icon fas fa-clock"></i>
+          Pon - Pt od 6:00 do 16:00
+        </div>
+      </div>
+    <form action="" class="contact-form">
+      <input type="text" class="textb" placeholder="Twoje imię">
+      <input type="email" class="textb" placeholder="Twój email">
+      <textarea placeholder="Twoja wiadomość"></textarea>
+      <input type="submit" class="btn" value='Wyślij'>
+    </form>
+  </div>
+  </div>
+
+CSS 
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans",sans-serif;
+}
+
+.background{
+  position: relative;
+  color: white;
+  height: 300px;
+  width: 100%;
+  background-color: none;
+  bottom: 9%;
+}
+
+.img {
+  position: absolute;
+  width: 100%;
+  color: white;
+  height: 500px;
+  object-fit: cover;
+  z-index: -10;
+}
+
+.contact-page{
+  position: absolute;
+  width: 100%;
+  max-width: 1400px;
+  padding: 50px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: max-content;
+  bottom: -120px;
+  left: 150px;
+}
+
+h2{
+  width: 100%;
+  margin-bottom: 80px;
+  text-transform: uppercase;
+  color: whitesmoke;
+  font-size: 60px;
+}
+
+.contact-info, .contact-form{
+  flex: 1;
+}
+
+.item{
+  margin-bottom: 24px;
+  font-size: 16px;
+  color: black;
+}
+
+.icon{
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  background-color: #222222;
+  text-align: center;
+  color: #C79E52;
+  border-radius: 50%;
+  margin-right: 16px;
+}
+
+.contact-form{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.textb{
+  width: calc(50% - 10px);
+  height: 50px;
+  padding: 12px;
+  background-color: #222;
+  border: none;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+textarea{
+  width: 100%;
+  min-height: 200px;
+  max-height: 400px;
+  resize: vertical;
+  padding: 12px;
+  background-color: #222;
+  border: none;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.btn{
+  width: 120px;
+  height: 40px;
+  margin-left: auto;
+  background-color: #222222;
+  border: none;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: 2px solid #C79E52;
+  transition: .3s linear;
+}
+
+.btn:hover{
+  background-color: black;
+  color: #C79E52;
+}
+
+@media screen and (max-width: 980px){
+  .contact-page{
+    max-width: 800px;
+  }
+  h2{
+    font-size: 40px;
+    margin-bottom: 40px;
+  }
+
+  .contact-info, .contact-form{
+    flex: 100%;
+    margin-bottom: 40px;
+  }
+  .textb{
+    width: 100%;
+  }
+}
+
